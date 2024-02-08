@@ -26,6 +26,27 @@ class Rudolf(Member):
     
     def age_num1(self):
         return f"{self.name} age is {self.age}"
+    
+class Fender(Member):
+    def __init__(self, name, instrument, age):
+        super().__init__(name, instrument,age)
+    
+    def guitar2(self):
+        if self.name == "Fender":
+            return f"that's {self.name} and he plays {self.instrument}."
+        else:
+            print("Not it!")
+    
+    def age_num2(self):
+        if self.age >= 18:
+            return f"{self.name} is {self.age} he's allowed to drink!"
+        else:
+            return f"you're underage! you need an X mark!" 
+
 
 rudolf = Rudolf("Rudolf","Guitar",25,"vocals")
 print(rudolf.guitar1())
+
+fender = Fender("Fender","Lead Guitar",18)
+print(fender.guitar2())
+print(fender.age_num2())
