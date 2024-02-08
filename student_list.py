@@ -2,18 +2,18 @@
 # output the course, advisor,
 # and students' information
 # in discreet math course.
-# Not only it will out the full name
+# Not only it will print out the full name
 # but also the students' major-minor
-# and the what semester of the year
+# and what semester of the year
 # they are currently in.
 
 # To accomplish this small project:
 # I used nested dictionary and list to
 # properly listed the information of the students.
 
-# Extract course and advisor name:
+# Extract course and advisor's name:
 # To extract the course and advisor's name I used
-# a print to return its name and to output it to
+# print to return its name and to output it to
 # the console.
 
 # Extract students' information:
