@@ -25,8 +25,9 @@ student_list = {
     'advisor': 'Dr. Isabella Babay',
     'student': [
         {'full_name': 'Jaiden Smith', 'major-minor':['electrical engnr', 'math'], 'semester': 1},
-         {'full_name': 'Zander Trumata', 'major-minor':['physics', 'math'], 'semester': 1},
-          {'full_name': 'William Wilson', 'major-minor':['comp sci', 'systems tech'], 'semester': 1}
+        {'full_name': 'Zander Trumata', 'major-minor':['physics', 'math'], 'semester': 1},
+        {'full_name': 'William Wilson', 'major-minor':['comp sci', 'systems tech'], 'semester': 1},
+        {'full-name': 'Leroy Jenkins', 'major-minor':['mech engne', 'comp sci'], 'semester': 1}
     ]
 }
 
@@ -45,3 +46,8 @@ for x,y in student_list["student"][1].items():
 print("\n")
 for x,y in student_list["student"][2].items():
     print(f"{x}: {y}")
+
+print("\n")
+for x,y in student_list["student"][3].items():
+    print(f"{x}: {y}")
+print("\n")
