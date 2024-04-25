@@ -58,7 +58,18 @@ class Punk(Member):
             return f"he like's {self.influence}! he's in!"
         return "You're not the right one!"
 
-
+class Zachary(Member):
+    def __init__(self,name,instrument,age):
+        super().__init__(name,instrument,age)
+    
+    def zachy(self):
+        self.name = input("What's your name? ")
+        self.instrument = input("Do you play the synth? ")
+        self.age = int(input("How old are you? "))
+        if self.name == "zach" and self.instrument == "yes" and self.age == 18:
+            return f"Ok just come on in!"
+        return f"I'm sorry but you need to leave."
+    
 
 rudolf = Rudolf("Rudolf","Guitar",25,"vocals")
 print(rudolf.guitar1())
@@ -70,3 +81,6 @@ print(fender.age_num2())
 larss = Punk("Lars","bass",19,"experimental")
 print(larss.lars())
 print(larss.influence1())
+
+zach = Zachary("","",0)
+print(zach.zachy())
